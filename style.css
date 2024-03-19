@@ -12,9 +12,17 @@ body {
     font-size: 28px;
 }
 
-img {
+#headerimg {
     margin-top: 10px;
-    max-width: 400px;
+    max-width: 200px;
+}
+
+#buttons {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #rock,
@@ -22,18 +30,23 @@ img {
 #scissors {
     border: solid 3px #9a8c98;
     border-radius: 8px;
-    background-color: white;
+    background-color: transparent;
     margin: 10px;
+    height: 130px;
+    width: 130px;
+    display: inline-block;
+    min-height: 130px;
 }
 
 #rock:hover,
 #paper:hover,
 #scissors:hover {
     border: solid 3px #f2e9e4;
+    background-color: #4a4e69;
 }
 
 #restart {
-    border: solid 3px #f2e9e4;
+    border: solid 3px #9a8c98;
     border-radius: 8px;
     color: #f2e9e4;
     background-color: #22223b;
@@ -46,6 +59,7 @@ img {
 
 #restart:hover {
     background-color: #4a4e69;
+    border: solid 3px #f2e9e4;
 }
 
 button img {
@@ -57,12 +71,33 @@ li {
     padding: 1px 0;
 }
 
+@keyframes append-animate {
+    from {
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    to {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+.new-li {
+    transform-origin: 50% 0;
+    animation: append-animate 200ms linear;
+}
+
 .pcwins {
     color: #d62828;
     font-size: 22px;
+    transform-origin: 50% 0;
+    animation: append-animate 500ms linear;
 }
 
 .plwins {
     color: #38b000;
     font-size: 22px;
+    transform-origin: 50% 0;
+    animation: append-animate 500ms linear;
 }

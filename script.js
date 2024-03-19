@@ -86,6 +86,7 @@ function playRound(playerSelection, computerSelection) {
     const newLI = document.createElement('li');
     newLI.innerText = `Player ${playerScore} (${playerSelection}) - Computer ${computerScore} (${computerSelection})`;
     match.append(newLI);
+    match.lastChild.classList.add('new-li');
     if (playerScore === 5 || computerScore === 5) {
         isGameOver = true;
     }
