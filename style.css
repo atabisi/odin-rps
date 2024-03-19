@@ -1,0 +1,68 @@
+body {
+    font-family: "Madimi One", sans-serif;
+    text-align: center;
+    background-color: #22223b;
+    color: #f2e9e4;
+}
+
+#header {
+    background-color: #4a4e69;
+    padding: 3px 0;
+    font-family: "Madimi One", sans-serif;
+    font-size: 28px;
+}
+
+img {
+    margin-top: 10px;
+    max-width: 400px;
+}
+
+#rock,
+#paper,
+#scissors {
+    border: solid 3px #9a8c98;
+    border-radius: 8px;
+    background-color: white;
+    margin: 10px;
+}
+
+#rock:hover,
+#paper:hover,
+#scissors:hover {
+    border: solid 3px #f2e9e4;
+}
+
+#restart {
+    border: solid 3px #f2e9e4;
+    border-radius: 8px;
+    color: #f2e9e4;
+    background-color: #22223b;
+    font-size: 18px;
+    font-weight: 900;
+    padding: 10px;
+    margin-top: 10px;
+    font-family: "Madimi One", sans-serif;
+}
+
+#restart:hover {
+    background-color: #4a4e69;
+}
+
+button img {
+    max-width: 100px;
+}
+
+li {
+    list-style: none;
+    padding: 1px 0;
+}
+
+.pcwins {
+    color: #d62828;
+    font-size: 22px;
+}
+
+.plwins {
+    color: #38b000;
+    font-size: 22px;
+}
